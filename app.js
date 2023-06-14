@@ -132,12 +132,6 @@ app.get("/about", function(req, res) {
     res.render("about");
 });
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
-app.listen(port);
-
-app.listen(port, function () {
+app.listen(300, function () {
     console.log("Server started successfully");
 });
